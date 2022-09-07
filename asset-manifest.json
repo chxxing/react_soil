@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/chxxing/react_soil.git/static/css/main.31d6cfe0.css",
+    "main.js": "/chxxing/react_soil.git/static/js/main.2510128a.js",
+    "index.html": "/chxxing/react_soil.git/index.html",
+    "main.2510128a.js.map": "/chxxing/react_soil.git/static/js/main.2510128a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.2510128a.js"
+  ]
+}
