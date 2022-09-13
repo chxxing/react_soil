@@ -5,44 +5,33 @@ const NavDB = [
             { title: "회사현황", link: "#!" },
             { title: "연혁", link: "#!" },
             { title: "인재채용", link: "#!" }
-        ],
-        subcont: [
-            {
-                stitle01: [
-                    { content: "메세지", link: "#!" },
-                    { content: "프로필", link: "#!" },
-                    { content: "경영활동", link: "#!" }
-                ],
-                link: "#!"
-            },
-            {
-                stitle02: [
-                    { content: "aaa", link: "#!" },
-                    { content: "bbb", link: "#!" },
-                    { content: "ccc", link: "#!" }
-                ],
-                link: "#!"
-            },
-            {
-                stitle03: [
-                    { content: "ddd", link: "#!" },
-                    { content: "eee", link: "#!" },
-                    { content: "fff", link: "#!" }
-                ],
-                link: "#!"
-            },
         ]
     },
-    // {
-    //     navid: 2, title: "Business", link: "#!", submenu: [{ title: "회사현황", link: "#!" }], subcont: [
-    //         { stitle: "개요", link: "#!" },
-    //         { stitle: "경쟁력", link: "#!" },
-    //         { stitle: "기업지배구조", link: "#!" },
-    //         { stitle: "CI", link: "#!" }
-    //     ]
-    // },
+    {
+        navid: 2, title: "Business", link: "#!", submenu: [
+            { title: "정유", link: "#!" },
+            { title: "윤활", link: "#!" },
+            { title: "석유화학", link: "#!" },
+            { title: "연구개발", link: "#!" }
+        ]
+    },
+    {
+        navid: 3, title: "Sustainability", link: "#!", submenu: [
+            { title: "ESG경영체계", link: "#!" },
+            { title: "ESG성과", link: "#!" },
+            { title: "지속가능성보고서", link: "#!" },
+            { title: "ESG경영", link: "#!" }
+        ]
+    },
+    {
+        navid: 4, title: "Relation", link: "#!", submenu: [
+            { title: "S-OIL소식", link: "#!" },
+            { title: "사회공헌", link: "#!" },
+            { title: "PR", link: "#!" },
+            { title: "IR", link: "#!" }
+        ]
+    }
 ]
-
 
 const Gnb = () => {
     return (
@@ -54,15 +43,7 @@ const Gnb = () => {
                         <ul className="submenu">
                             {
                                 it.submenu.map((smenu, idx) =>
-                                (<li key={idx}><a href={smenu.link}>{smenu.title}</a>
-                                    <ul>
-                                        {
-                                            it.subcont.map((scont, idx) =>
-                                            (<li key={idx}><a href={scont.link}>{scont.stitle01?.content}
-                                            </a></li>))
-                                        }
-                                    </ul>
-                                </li>)
+                                    (<li key={idx}><a href={smenu.link}>{smenu.title}</a></li>)
                                 )
                             }
                         </ul>
