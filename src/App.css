@@ -3,14 +3,25 @@
 } */
 
 .container {
-    display: flex;
     width: 1200px;
     margin: 0 auto;
 }
 
-.inner {
-    width: 1200px;
-    margin: 0 auto;
+.sc {
+    padding: 100px 0;
+}
+
+.sc h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.sc p {
+    font-size: 18px;
+    margin: 0 0 40px 0;
+    text-align: center;
 }
 
 .Header {
@@ -27,6 +38,7 @@
 }
 
 .Header .container {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -129,20 +141,20 @@
     transition-duration: 5ms;
 }
 
-.MainVisual .inner {
+.MainVisual .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.MainVisual .inner h2 {
+.MainVisual .container h2 {
     color: #00d39c;
     font-size: 50px;
     font-weight: 700;
 }
 
-.MainVisual .inner h2::after {
+.MainVisual .container h2::after {
     content: "";
     display: block;
     margin: 20px 0 30px 2px;
@@ -151,11 +163,12 @@
     background: #00d39c;
 }
 
-.MainVisual .inner p {
+.MainVisual .container p {
     color: #fff;
     font-size: 23px;
     font-weight: 400;
     line-height: 1.4;
+    white-space: pre-line;
 }
 
 .MainVisual .slideArrows button {
@@ -176,4 +189,200 @@
 
 .MainVisual .slideArrows button:last-child {
     margin: 0 0 0 850px;
+}
+
+.Company {}
+
+.Company .container {
+    flex-direction: column;
+}
+
+.Company .container>div {
+    display: flex;
+    gap: 20px;
+    margin: 0 0 20px 0;
+}
+
+.Company figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.Company .txtBox {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Company figure:hover .txtBox {
+    opacity: 1;
+}
+
+.Company .txtBox h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 120px 0 10px 0;
+}
+
+.Company .txtBox .desc {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.45;
+    white-space: pre-line;
+}
+
+.Business {
+    background: #f9f9f9;
+}
+
+.Business .container {
+    display: flex;
+}
+
+.Business .flexBox figure {
+    flex: 1 1 0;
+}
+
+.Business .flexBox figure:hover {
+    flex: 1 1 300px;
+}
+
+.Sustainability {
+    background: url(../public/assets/business_bg.png) no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+.Sustainability h2 {
+    margin: 0 0 20px 0;
+}
+
+.Sustainability p {
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 90px 0;
+    line-height: 1.45;
+}
+
+.Sustainability p::after {
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    width: 1px;
+    height: 40px;
+    background: #fff;
+}
+
+.Sustainability ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Sustainability ul>li>a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 35px;
+    border: 1px solid #ddd;
+    /* border-radius: 25px; */
+    transition: 0.2s;
+}
+
+.Sustainability ul>li:hover>a {
+    background: #ffd700;
+    border: 1px solid #ffd700;
+    color: #333;
+}
+
+.Relation {
+    height: 700px;
+}
+
+.Footer {
+    background: #f9f9f9;
+}
+
+.Footer .top {
+    font-size: 14px;
+    line-height: 70px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.Footer .top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .top .Fnb li {
+    display: inline-block;
+}
+
+.Footer .top .Fnb li a {
+    display: inline-block;
+}
+
+.Footer .top .Fnb li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 20px;
+}
+
+.Footer .top .Sns i {
+    padding: 7px;
+    margin: 0 0 0 10px;
+    font-size: 19px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.Footer .bottom {
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 20px 0;
+}
+
+.Footer .bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer .bottom .address {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Footer .bottom .address li:nth-child(1):after,
+.Footer .bottom .address li:nth-child(3):after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+.Footer .bottom .familylink select {
+    width: 170px;
+    background: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
 }

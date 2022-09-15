@@ -3,9 +3,9 @@ import MainSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 const SlideDB = [
-    { id: 1, content: "Global Leader", desc: "아시아 · 태평양을 넘어 글로벌 리더로", p: "새로운 성장의 시대를 열어갑니다." },
-    { id: 2, content: "New Quantum Leap", desc: "RUC/ODC 프로젝트 성공으로", p: "한 차원 높은 비전을 실현합니다." },
-    { id: 3, content: "Vision 2030", desc: "최고의 경쟁력과 창의성을 갖춘", p: "친환경 에너지 · 화학 기업" }
+    { id: 1, content: "Global Leader", desc: "아시아 · 태평양을 넘어 글로벌 리더로\n 새로운 성장의 시대를 열어갑니다." },
+    { id: 2, content: "New Quantum Leap", desc: "RUC/ODC 프로젝트 성공으로\n 한 차원 높은 비전을 실현합니다." },
+    { id: 3, content: "Vision 2030", desc: "최고의 경쟁력과 창의성을 갖춘\n 친환경 에너지 · 화학 기업" }
 ]
 
 
@@ -25,10 +25,9 @@ const MainVisual = () => {
                     SlideDB.map((slide, idx) => {
                         return (
                             <figure key={slide.id} className={'itm0' + slide.id}>
-                                <div className="inner">
+                                <div className="container">
                                     <h2>{slide.content}</h2>
                                     <p>{slide.desc}</p>
-                                    <p>{slide.p}</p>
                                 </div>
                             </figure>
                         )
