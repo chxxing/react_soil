@@ -1,3 +1,6 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+
 const Relation = () => {
     return (
         <section className="Relation sc">
