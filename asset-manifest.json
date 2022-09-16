@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/chxxing/react_soil.git/static/css/main.31d6cfe0.css",
-    "main.js": "/chxxing/react_soil.git/static/js/main.2510128a.js",
-    "index.html": "/chxxing/react_soil.git/index.html",
-    "main.2510128a.js.map": "/chxxing/react_soil.git/static/js/main.2510128a.js.map"
+    "main.css": "/react_soil/static/css/main.73b0ba59.css",
+    "main.js": "/react_soil/static/js/main.cdc3f07e.js",
+    "static/media/business_bg.png": "/react_soil/static/media/business_bg.1aabd97c52e963163570.png",
+    "static/media/mainvisual03.jpg": "/react_soil/static/media/mainvisual03.ea324120f953d0f1b3d3.jpg",
+    "static/media/mainvisual01.jpg": "/react_soil/static/media/mainvisual01.e6ad43c5ecc1aeae46fb.jpg",
+    "static/media/mainvisual02.jpg": "/react_soil/static/media/mainvisual02.8e13ab8c432cc243393b.jpg",
+    "index.html": "/react_soil/index.html",
+    "main.73b0ba59.css.map": "/react_soil/static/css/main.73b0ba59.css.map",
+    "main.cdc3f07e.js.map": "/react_soil/static/js/main.cdc3f07e.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.2510128a.js"
+    "static/css/main.73b0ba59.css",
+    "static/js/main.cdc3f07e.js"
   ]
 }
