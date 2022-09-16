@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import MainSlider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -10,6 +10,7 @@ const SlideDB = [
 
 
 const MainVisual = () => {
+    const [slideNum, setSlideNum] = useState(0);
     const MAINSLIDE = useRef(null);
     const setting = {
         arrows: false,
@@ -20,7 +21,10 @@ const MainVisual = () => {
     }
     return (
         <section className="MainVisual">
-            <MainSlider {...setting} ref={MAINSLIDE}>
+            <MainSlider
+                {...setting}
+                afterChange={index => setSlideNum(index)}
+                ref={MAINSLIDE}>
                 {
                     SlideDB.map((slide, idx) => {
                         return (
@@ -35,7 +39,13 @@ const MainVisual = () => {
                 }
             </MainSlider>
             <ul className="slideDots">
-
+                {
+                    SlideDB.map((dot, idx) => <li
+                        key={dot.id}
+                        onClick={() => MAINSLIDE.current.slickGoTo(idx)}
+                        className={idx === slideNum ? 'on' : ''}
+                    >{dot.id}</li>)
+                }
             </ul>
             <div className="slideArrows">
                 <button onClick={() => MAINSLIDE.current.slickPrev()}><i className="xi-angle-left-thin"></i></button>

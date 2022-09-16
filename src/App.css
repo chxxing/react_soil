@@ -154,21 +154,20 @@
     font-weight: 700;
 }
 
-.MainVisual .container h2::after {
+/* .MainVisual .container h2::after {
     content: "";
     display: block;
     margin: 20px 0 30px 2px;
     width: 80px;
     height: 1px;
     background: #00d39c;
-}
+} */
 
 .MainVisual .container p {
     color: #fff;
     font-size: 23px;
     font-weight: 400;
     line-height: 1.4;
-    white-space: pre-line;
 }
 
 .MainVisual .slideArrows button {
@@ -189,6 +188,29 @@
 
 .MainVisual .slideArrows button:last-child {
     margin: 0 0 0 850px;
+}
+
+.MainVisual .slideDots {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    font-size: 0;
+    top: calc(60% + 20px);
+    left: calc((100% + 1200px) / 2 - 1200px);
+}
+
+.MainVisual .slideDots li {
+    width: 25px;
+    height: 10px;
+    background: #fff;
+    border-radius: 10px;
+    transition: width 0.3s;
+    cursor: pointer;
+}
+
+.MainVisual .slideDots li.on {
+    width: 50px;
+    background: #00d39c;
 }
 
 .Company {}
@@ -212,33 +234,31 @@
     position: absolute;
     display: inline-block;
     width: 100%;
-    height: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    height: 0%;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
     text-align: center;
     text-shadow: 0 0 1px #000;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
-    transition: 0.3s;
+    transition: height 0.5s;
 }
 
 .Company figure:hover .txtBox {
-    opacity: 1;
+    height: 50%;
 }
 
 .Company .txtBox h3 {
     font-size: 23px;
     font-weight: 500;
-    margin: 120px 0 10px 0;
+    margin: 45px 0 10px 0;
 }
 
 .Company .txtBox .desc {
     font-size: 17px;
     font-weight: 300;
     line-height: 1.45;
-    white-space: pre-line;
 }
 
 .Business {
@@ -247,14 +267,36 @@
 
 .Business .container {
     display: flex;
+    gap: 10px;
 }
 
-.Business .flexBox figure {
-    flex: 1 1 0;
+.Business figure {
+    overflow: hidden;
+    margin: 0 0 20px 0;
 }
 
-.Business .flexBox figure:hover {
-    flex: 1 1 300px;
+.Business figure img {
+    transition: transform 0.5s;
+}
+
+.Business figure img:hover {
+    transform: scale(1.2);
+}
+
+.Business .txtBox {
+    text-align: center;
+}
+
+.Business .txtBox h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+
+.Business .txtBox .desc {
+    font-size: 15px;
 }
 
 .Sustainability {
@@ -306,9 +348,22 @@
     color: #333;
 }
 
-.Relation {
-    height: 700px;
+.Relation {}
+
+.Relation .container {
+    display: flex;
 }
+
+.Relation .left {
+    width: 50%;
+}
+
+.Relation .right {
+    width: 50%;
+    height: 600px;
+    background: #ddd;
+}
+
 
 .Footer {
     background: #f9f9f9;
