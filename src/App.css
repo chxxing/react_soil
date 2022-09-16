@@ -1,7 +1,3 @@
-/* * {
-    outline: 1px solid green;
-} */
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -348,18 +344,14 @@
     color: #333;
 }
 
-.Relation {}
+.Relation .left {
+    width: 50%;
+}
 
 .Relation .container {
     display: flex;
     gap: 10px;
 }
-
-.Relation .left {
-    width: calc(50% + 10px);
-}
-
-.Relation .NewsSlider .slick-active {}
 
 .Relation .NewsSlider .slick-slide>div {
     position: relative;
@@ -393,11 +385,6 @@
     text-overflow: ellipsis;
 }
 
-.Relation .right {
-    width: 50%;
-    height: 100%;
-}
-
 .Relation .slideArrows button {
     border: 1px solid #ddd;
     background: none;
@@ -408,6 +395,41 @@
     cursor: pointer;
 }
 
+.Relation .right {
+    width: 50%;
+}
+
+.Relation .right .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 8px auto;
+    padding: 22px 50px;
+    border: 1px solid #ddd;
+    font-size: 19px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.Relation .right .box img {
+    width: 27px;
+    margin: 0 20px 0 0;
+}
+
+.Relation .right .box:hover {
+    background: #005f28;
+    color: #fff;
+}
+
+.Relation .right .box:hover img {
+    filter: invert(1);
+}
+
+.section04 .box a:hover {
+    background: #f3dcbf;
+    filter: invert(1);
+}
 
 .Footer {
     background: #f9f9f9;

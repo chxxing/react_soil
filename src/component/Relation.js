@@ -10,9 +10,10 @@ const NEWS = [
     { id: 6, title: "S-OIL, 협력업체 9곳에 우수 협력업체 인증서 수여", desc: "S-OIL(대표: 후세인 알 카타니)은 17일 울산시 온산 공장에서 ‘2022년 우수 협력업체 인증서 수여식’을 열고, 자재·용역 부문에서 우수 협력업체로 선정된 총 9개사에 대해 인증서를 수여했다.", date: "AUG 2022", link: "#!" },
 ]
 const INFORM = [
-    { id: 1, title: "IR공지", src: "/assets/icon01.png", link: "#!" },
-    { id: 2, title: "IR자료", src: "/assets/icon02.png", link: "#!" },
+    { id: 1, title: "IR 자료", src: "/assets/icon01.png", link: "#!" },
+    { id: 2, title: "IR 공지", src: "/assets/icon02.png", link: "#!" },
     { id: 3, title: "주가정보", src: "/assets/icon03.png", link: "#!" },
+    { id: 4, title: "재무정보", src: "/assets/icon04.png", link: "#!" },
 ]
 
 const Relation = () => {
