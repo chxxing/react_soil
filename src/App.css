@@ -352,16 +352,60 @@
 
 .Relation .container {
     display: flex;
+    gap: 10px;
 }
 
 .Relation .left {
-    width: 50%;
+    width: calc(50% + 10px);
+}
+
+.Relation .NewsSlider .slick-active {}
+
+.Relation .NewsSlider .slick-slide>div {
+    position: relative;
+    margin: 0 10px 0 0;
+}
+
+.Relation .NewsSlider img {
+    margin: 0 0 20px 0;
+}
+
+.Relation .NewsSlider .box span {
+    display: block;
+    font-size: 14px;
+    color: #005f28;
+    margin: 0 0 5px 0;
+}
+
+.Relation .NewsSlider .box .tit {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Relation .NewsSlider .box .desc {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .Relation .right {
     width: 50%;
-    height: 600px;
-    background: #ddd;
+    height: 100%;
+}
+
+.Relation .slideArrows button {
+    border: 1px solid #ddd;
+    background: none;
+    color: #005f28;
+    padding: 5px;
+    margin: 20px 10px 0 -1px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 
